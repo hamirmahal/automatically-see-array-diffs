@@ -1,0 +1,19 @@
+{
+  "author": "Hamir Mahal",
+  "description": "Automatically see the differences between two arrays",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "main": "src/index.js",
+  "name": "array-diffs",
+  "scripts": {
+    "clean": "rm --force --verbose tmp/sortedActual.js && rm --force --verbose tmp/sortedExpected.js",
+    "prestart": "npm install",
+    "start": "clear && npm run clean && nodemon --ext '*'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "version": "1.0.0"
+}

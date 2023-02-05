@@ -1,0 +1,5 @@
+# ignore installed dependencies
+node_modules/
+
+# ignore intermediate files created by this program
+tmp/

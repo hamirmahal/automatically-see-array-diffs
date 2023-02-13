@@ -25,8 +25,8 @@ if (!Array.isArray(actual) || !Array.isArray(expected)) {
 }
 actual.sort();
 expected.sort();
-const pathToSortedActual = './tmp/sortedActual.js';
-const pathToSortedExpected = './tmp/sortedExpected.js';
+const pathToSortedActual = 'sortedActual.js';
+const pathToSortedExpected = 'sortedExpected.js';
 fs.writeFileSync(pathToSortedActual, JSON.stringify(actual, null, 2));
 fs.writeFileSync(pathToSortedExpected, JSON.stringify(expected, null, 2));
 

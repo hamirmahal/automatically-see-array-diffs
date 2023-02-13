@@ -11,7 +11,7 @@
   "scripts": {
     "clean": "rm --force --verbose tmp/sortedActual.js && rm --force --verbose tmp/sortedExpected.js",
     "prestart": "npm install",
-    "start": "clear && npm run clean && nodemon --ext '*'",
+    "start": "clear && npm run clean && nodemon --ext 'txt' --watch src/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "type": "module",

@@ -30,7 +30,7 @@ const pathToSortedExpected = 'sortedExpected.js';
 fs.writeFileSync(pathToSortedActual, JSON.stringify(actual, null, 2));
 fs.writeFileSync(pathToSortedExpected, JSON.stringify(expected, null, 2));
 
-const command = `git diff --color --no-index ${pathToSortedExpected} ${pathToSortedActual}`;
+const command = `git diff --color --no-index ${pathToSortedActual} ${pathToSortedExpected}`;
 try {
   execSync(command, { encoding: 'utf-8' });
   console.info('Both inputs match.');
